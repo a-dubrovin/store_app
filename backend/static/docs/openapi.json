@@ -266,6 +266,38 @@
         "produces": [
           "application/json"
         ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "filter[name]",
+            "type": "string",
+            "description": "Filter products by name"
+          },
+          {
+            "in": "query",
+            "name": "filter[sku]",
+            "type": "string",
+            "description": "Filter products by name"
+          },
+          {
+            "in": "query",
+            "name": "filter[category]",
+            "type": "integer",
+            "description": "Filter products by category name"
+          },
+          {
+            "in": "query",
+            "name": "filter[type]",
+            "type": "integer",
+            "description": "Filter products by type name"
+          },
+          {
+            "in": "query",
+            "name": "filter[stocks]",
+            "type": "integer",
+            "description": "Filter products by stocks"
+          }
+        ],
         "responses": {
           "200": {
             "description": "Success"
